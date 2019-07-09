@@ -216,10 +216,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7 \
     vendor.display.config@1.7.vendor
 
-# Doze
-PRODUCT_PACKAGES += \
-    OnePlusDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
