@@ -1,0 +1,1 @@
+type omni_sysfs_drm, sysfs_type, fs_type;
