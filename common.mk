@@ -401,15 +401,14 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msmnile
+ 
+# tri-key, gestures, and panel modes
+PRODUCT_PACKAGES += \
+    DeviceParts
 
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus_msmnile
-
-# tri-state key
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key_daemon
 
 # Trust HAL
 PRODUCT_PACKAGES += \
