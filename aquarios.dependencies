@@ -1,8 +1,8 @@
 [
   {
-    "repository": "PeterCxy/android_kernel_oneplus_sm8150",
+    "repository": "AOSiP-Devices/kernel_oneplus_sm8150",
     "target_path": "kernel/oneplus/sm8150",
-    "branch": "lineage-17.1"
+    "branch": "ten"
   },
   {
     "repository": "LineageOS/android_device_oneplus_common",
@@ -15,8 +15,8 @@
     "branch": "lineage-17.1"
   },
   {
-    "repository": "luk1337/proprietary_vendor_oneplus",
-    "target_path": "vendor/oneplus",
-    "branch": "lineage-17.1"
+    "repository": "vendor_oneplus_sm8150-common",
+    "target_path": "vendor/oneplus/sm8150-common",
+    "branch": "x-ng"
   }
 ]
