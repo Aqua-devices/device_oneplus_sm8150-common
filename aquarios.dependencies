@@ -15,7 +15,7 @@
     "branch": "lineage-17.1"
   },
   {
-    "repository": "luk1337/proprietary_vendor_oneplus",
+    "repository": "TheMuppets/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch": "lineage-17.1"
   }
