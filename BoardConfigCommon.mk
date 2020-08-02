@@ -36,6 +36,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
+BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.vbmeta.avb_version=1.0
@@ -43,6 +44,7 @@ BOARD_KERNEL_IMAGE_NAME := Image-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_ROOT_EXTRA_FOLDERS := op1 op2
 TARGET_KERNEL_ARCH := arm64
@@ -59,7 +61,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 TARGET_USES_QCOM_BSP := true
 
 # Properties
+TARGET_ODM_PROP += $(VENDOR_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
@@ -91,6 +95,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CNE and DPM
 BOARD_USES_QCNE := true
+
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //$(VENDOR_PATH):libfod_extension.oneplus_msmnile
 
 # Dex
 ifeq ($(HOST_OS),linux)
@@ -170,6 +177,8 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_WLAN_POWER_STAT := "/sys/kernel/wlan/power_stats"
 
 # Recovery
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -181,7 +190,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-09-05
+VENDOR_SECURITY_PATCH := 2020-03-01
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk

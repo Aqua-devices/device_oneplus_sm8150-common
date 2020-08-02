@@ -12,9 +12,6 @@ $(call inherit-product-if-exists, vendor/oneplus/sm8150-common/sm8150-common-ven
 #inline gapps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
-# Vendor properties
--include $(LOCAL_PATH)/vendor_props.mk
-
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -322,7 +319,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay@2.0-service.oneplus_msmnile
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -405,10 +402,6 @@ PRODUCT_PACKAGES += \
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
     libstdc++.vendor
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.2-service.oneplus_msmnile
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \

@@ -1,4 +1,5 @@
- 
+# All unpinned blobs below are extracted from OnePlus7ProOxygen_21.P.26_OTA_026_all_2003222032_6893aca031668
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -59,7 +60,6 @@ vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
 vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
 vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/audio.primary.msmnile.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
@@ -90,7 +90,6 @@ vendor/lib/vendor.dolby.hardware.dms@1.0.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/audio.primary.msmnile.so
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
@@ -139,7 +138,7 @@ vendor/lib64/libbthost_if.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 
-# Bluetooth (aptX)
+# Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
@@ -168,12 +167,10 @@ vendor/lib/camera/com.qti.sensor.imx471.so
 vendor/lib/camera/com.qti.sensor.imx481.so
 vendor/lib/camera/com.qti.sensor.imx586.so
 vendor/lib/camera/com.qti.sensor.s5k3m5.so
-vendor/lib/camera/components/com.oneplus.node.bokeh.so
 vendor/lib/camera/components/com.oneplus.node.distortion.so
 vendor/lib/camera/components/com.oneplus.node.eis.so
 vendor/lib/camera/components/com.oneplus.node.memcpy.so
 vendor/lib/camera/components/com.oneplus.node.preview.so
-vendor/lib/camera/components/com.oneplus.node.rtb.so
 vendor/lib/camera/components/com.oneplus.node.sat.so
 vendor/lib/camera/components/com.oneplus.node.snapshotfusion.so
 vendor/lib/camera/components/com.oneplus.node.supernightraw.so
@@ -213,8 +210,6 @@ vendor/lib/camera/components/com.qtistatic.stats.awb.so
 vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib/camera/components/libdepthmapwrapper.so
-vendor/lib/hw/camera.qcom.so
-vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libSTDualCamCaptureWT.so
 vendor/lib/lib_bokehlib.so
 vendor/lib/lib_oneplus_watermark.so
@@ -273,27 +268,10 @@ vendor/lib64/camera/com.qti.sensor.imx471.so
 vendor/lib64/camera/com.qti.sensor.imx481.so
 vendor/lib64/camera/com.qti.sensor.imx586.so
 vendor/lib64/camera/com.qti.sensor.s5k3m5.so
-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx586.bin
-vendor/lib64/camera/com.qti.sensormodule.ofilm_s5k3m5.bin
-vendor/lib64/camera/com.qti.sensormodule.semco_2nd_lens_imx586.bin
-vendor/lib64/camera/com.qti.sensormodule.semco_imx481.bin
-vendor/lib64/camera/com.qti.sensormodule.semco_imx586.bin
-vendor/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_imx471.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.ofilm_imx481.bin
-vendor/lib64/camera/com.qti.tuned.ofilm_imx586.bin
-vendor/lib64/camera/com.qti.tuned.ofilm_s5k3m5.bin
-vendor/lib64/camera/com.qti.tuned.semco_imx481.bin
-vendor/lib64/camera/com.qti.tuned.semco_imx586.bin
-vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin
-vendor/lib64/camera/com.qti.tuned.sunny_imx471.bin
-vendor/lib64/camera/components/com.oneplus.node.bokeh.so
 vendor/lib64/camera/components/com.oneplus.node.eis.so
 vendor/lib64/camera/components/com.oneplus.node.memcpy.so
 vendor/lib64/camera/components/com.oneplus.node.preview.so
-vendor/lib64/camera/components/com.oneplus.node.rtb.so
 vendor/lib64/camera/components/com.oneplus.node.sat.so
 vendor/lib64/camera/components/com.oneplus.node.supernightraw.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
@@ -334,8 +312,6 @@ vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/com.oneplus.node.distortion.so
 vendor/lib64/camera/components/com.oneplus.node.snapshotfusion.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libSTDualCamCaptureWT.so
 vendor/lib64/lib_bokehlib.so
 vendor/lib64/lib_oneplus_watermark.so
